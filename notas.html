@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerenciar Notas</h1>
+
+    <input type="text" id="search" placeholder="Buscar por nome da nota ou data">
+
+    <br>
+
+    <select id="sortOrder">
+        <option value="nameAsc">Nome (Crescente)</option>
+        <option value="nameDesc">Nome (Decrescente)</option>
+        <option value="dateAsc">Data (Crescente)</option>
+        <option value="dateDesc">Data (Decrescente)</option>
+    </select>
+
+    <table id="notesTable">
+        <thead>
+            <tr>
+                <th>Nota</th>
+                <th>Data</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas de notas inseridas dinamicamente -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
